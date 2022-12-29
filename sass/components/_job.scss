@@ -1,0 +1,27 @@
+@use '../utils/variables' as *;
+@use '../utils/globals' as *;
+
+.job {
+  &_list {
+   @include mixin-display(flex, space-between, center, wrap);
+    padding-bottom: 94px;
+  }
+  &_item {
+    position: relative;
+  }
+  &_item > &_image {
+    display: block;
+  }
+  &_description {
+    width: 100%;
+    background-color: rgba(47, 48, 58, 0.8);
+    position: absolute;
+    bottom: 0;
+  }
+  &_text {
+    @include mixin-main($color-white, 700, 14px, 1.14, 0.03em);
+    text-align: center;
+    text-transform: uppercase;
+    margin: 27px 0;
+  }
+}

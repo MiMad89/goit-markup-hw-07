@@ -1,0 +1,128 @@
+@use '../utils/variables' as *;
+@use '../utils/globals' as *;
+
+.warning {
+  color: $color-white;
+}
+.contact-name {
+  @include mixin-main($color-white, 700, 14px, 1.14, 0.03em);
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+.footer-bg {
+  padding: 60px 0px;
+  background-color: $background-graphite;
+}
+.footer {
+  display: flex;
+
+  &_logo {
+    @include mixin-main($color-blue, 700, 26px, 1.19, 0.03em);
+    font-family: 'Raleway', sans-serif;
+    text-decoration: none;
+  }
+  &_list {
+    margin: 20px 0;
+  }
+  &_item:nth-last-child(-n + 2) {
+    margin-top: 9px;
+  }
+  &_link {
+    text-decoration: none;
+    color: $color-grey;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      color: $color-blue;
+    }
+
+    &--color {
+      color: $color-white;
+    }
+  }
+  // .contact-second {
+  //   text-decoration-line: underline;
+  // }
+  &_social {
+    margin-top: 10px;
+    margin-left: 70px;
+  }
+  &_social-item {
+    display: flex;
+    gap: 10px;
+  }
+  &_social-icon {
+    background-color: rgba(255, 255, 255, 0.1);
+    fill: $color-white;
+    border-radius: 50%;
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      background-color: $background-blue;
+    }
+  }
+}
+.newsletter {
+  margin-top: 10px;
+  margin-left: auto;
+
+  &_item {
+    display: flex;
+    align-items: center;
+  }
+  &_mail {
+    width: 350px;
+    margin-right: 12px;
+    padding: 15px;
+    font-weight: 400;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    color: $color-white;
+    background-color: $background-graphite;
+    outline: none;
+  }
+  &_mail:hover,
+  &_mail:focus,
+  &_mail:not(:placeholder-shown):required:valid {
+    border-color: $background-blue;
+    transition-property: border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &_mail:not(:placeholder-shown):required:invalid {
+    border-color: $color-red;
+  }
+  &_submit {
+    @include mixin-main($color-white, 700, 16px, 1.87, 0.03em);
+    display: inline-flex;
+    align-items: center;
+    padding: 10px 28px 10px 42px;
+    text-align: center;
+    background: $background-blue;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+  }
+  &_submit:hover,
+  &_submit:focus {
+    background-color: $color-white;
+    color: $color-blue;
+  }
+  &_submit-send {
+    margin-left: 24px;
+    fill: currentColor;
+  }
+  &_submit-send:hover,
+  &_submit-send:focus {
+    fill: $color-blue;
+  }
+}

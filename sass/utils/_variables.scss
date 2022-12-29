@@ -1,0 +1,22 @@
+$color-white: white;
+$color-black: black;
+$color-blue: #2196f3;
+$color-grey: #757575;
+$color-red: red;
+$background-black: black;
+$background-blue: #2196f3;
+$background-graphite: #2f303a;
+$background-icon: #afb1b8;
+$background-beige: #f5f4fa;
+
+
+%main-body{
+    font-family: 'Roboto';
+}
+
+%main-container{
+    max-width: 1200px;
+    padding: 0 15px;
+    margin: auto;
+}
+

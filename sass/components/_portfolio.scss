@@ -4,47 +4,47 @@
 .portfolio {
   padding-bottom: 94px;
 
-  &_list {
+  &__list {
     @include mixin-display(flex, center, stretch, wrap);
     gap: 30px;
     background: $color-white;
     text-align: left;
   }
-  &_name {
+  &__name {
     @include mixin-main($color-black, 700, 18px, 2, 0.045em);
   }
-  &_text {
+  &__text {
     @include mixin-main($color-grey, 400, 16px, 1.87, 0.03em);
   }
-  &_image {
+  &__image {
     display: block;
   }
-  &_title {
+  &__title {
     @include mixin-display(flex, center, stretch, wrap);
     flex-direction: column;
     padding: 20px 24px;
     border: 1px solid #eeeeee;
   }
-  &_item {
+  &__item {
     cursor: pointer;
     transition-property: box-shadow;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
-    &_item:hover,
-    &_item:focus {
+    &__item:hover,
+    &__item:focus {
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
         1px 4px 6px rgba(0, 0, 0, 0.16);
     }
   }
-  &_item:hover &_lable {
+  &__item:hover &__lable {
     transform: translatex(0);
   }
-  &_overlay {
+  &__overlay {
     position: relative;
     overflow: hidden;
   }
-  &_lable {
+  &__lable {
     @include mixin-main($color-black, 400, 18px, 1.55, 0.02em);
     position: absolute;
     display: flex;
@@ -59,7 +59,7 @@
     transform: translatey(100%);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &_content {
+  &__content {
     color: $color-white;
     padding: 10px;
     margin: 0;

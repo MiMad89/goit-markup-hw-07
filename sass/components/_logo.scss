@@ -7,20 +7,20 @@
 
 .menu {
   @include mixin-display(flex, space-between, center, wrap);
-  &_header {
+  &__header {
     @include mixin-display(flex, flex-start, center, wrap);
   }
-  &_logo {
+  &__logo {
     padding: 25px 0;
   }
-  &_link {
+  &__link {
     @include mixin-main($color-blue, 700, 26px, 1.19, 0.03em);
     font-family: 'Raleway', sans-serif;
     font-style: normal;
     text-decoration: none;
     border: none;
   }
-  &_element {
+  &__element {
     color: $color-black;
   }
 }

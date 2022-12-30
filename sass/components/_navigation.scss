@@ -4,23 +4,23 @@
 .nav {
   padding-left: 46px;
 
-  &_list {
+  &__list {
     @include mixin-display(flex, flex-start, stretch, wrap);
   }
-  &_item {
+  &__item {
     margin-left: 46px;
   }
-  &_mane {
+  &__mane {
     @include mixin-main($color-black, 700, 14px, 1.14, 0.02em);
     text-decoration: none;
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &_active {
+  &__active {
     position: relative;
   }
-  &_active::after {
+  &__active::after {
     content: '';
     position: absolute;
     display: block;
@@ -31,39 +31,39 @@
     border-radius: 2px;
     background-color: $background-blue;
   }
-  &_contact-header {
+  &__contact-header {
     cursor: pointer;
     display: flex;
     align-items: center;
   }
-  &_mail,
-  &_tel {
+  &__mail,
+  &__tel {
     @include mixin-main($color-grey, 500, 14px, 1.14, 0.02em);
     text-decoration: none;
     transition-property: color, fill;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &_mane:hover,
-  &_mail:hover,
-  &_tel:hover {
+  &__mane:hover,
+  &__mail:hover,
+  &__tel:hover {
     color: $color-blue;
   }
-  &_contact-tel {
+  &__contact-tel {
     margin-left: 30px;
   }
-  &_contact-mail-icon {
+  &__contact-mail-icon {
     vertical-align: -1px;
     fill: currentColor;
   }
-  &_contact-mail-icon:hover {
+  &__contact-mail-icon:hover {
     fill: $background-blue;
   }
-  &_contact-tel-icon {
+  &__contact-tel-icon {
     vertical-align: -3px;
     fill: currentColor;
   }
-  &_contact-tel-icon:hover {
+  &__contact-tel-icon:hover {
     fill: $background-blue;
   }
 }

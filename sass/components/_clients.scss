@@ -4,15 +4,15 @@
 .clients {
   padding: 94px 0;
 
-  &_name {
+  &__name {
     @include mixin-main($color-black, 700, 36px, 1.166, 0.03em);
     padding-bottom: 50px;
     text-align: center;
   }
-  &_list {
+  &__list {
     @include mixin-display(flex, space-between, center, wrap);
   }
-  &_item {
+  &__item {
     cursor: pointer;
     padding: 16px 32px;
     border: 1px solid $background-icon;
@@ -27,7 +27,7 @@
       color: $color-blue;
     }
   }
-  &_icon {
+  &__icon {
     fill: currentColor;
   }
 }

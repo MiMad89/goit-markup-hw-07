@@ -35,7 +35,7 @@
   border-radius: 4px;
   transition: transform 500ms ease;
 
-  &_button {
+  &__button {
     position: absolute;
     top: 8px;
     right: 8px;
@@ -45,18 +45,18 @@
     border-radius: 50%;
     cursor: pointer;
   }
-  &_botton-close {
+  &__botton-close {
     stroke: $background-icon;
     fill: $color-white;
   }
-  &_name {
+  &__name {
     @include mixin-main($color-black, 700, 20px, 1.15, 0.03em);
     text-align: center;
   }
-  &_item {
+  &__item {
     margin-top: 12px;
   }
-  &_label {
+  &__label {
     @include mixin-main($color-black, 400, 12px, 1.16, 0.02em);
     display: flex;
     flex-direction: column;
@@ -69,7 +69,7 @@
       fill: $background-blue;
     }
   }
-  &_input {
+  &__input {
     @include mixin-main($color-black, 600, 16px, 1.14, 0.03em);
     padding: 12px 15px;
     padding-left: 40px;
@@ -86,7 +86,7 @@
       border-color: $background-blue;
     }
   }
-  &_icon {
+  &__icon {
     position: absolute;
     top: 31px;
     left: 13px;
@@ -98,7 +98,7 @@
       border-color: $background-blue;
     }
   }
-  &_textarea {
+  &__textarea {
     @include mixin-main($color-black, 600, 16px, 1.14, 0.03em);
     width: 100%;
     border: 1px solid rgba(33, 33, 33, 0.2);
@@ -116,14 +116,14 @@
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
-  &_rule {
+  &__rule {
     display: flex;
     gap: 8px;
     align-items: center;
     justify-content: center;
     padding-bottom: 30px;
   }
-  &_check {
+  &__check {
     width: 16px;
     height: 15px;
     position: relative;
@@ -148,14 +148,14 @@
       content: url('../images/check.svg');
     }
   }
-  &_statute {
+  &__statute {
     @include mixin-main($color-black, 400, 14px, 1.71, 0.03em);
   }
-  &_statute &_link {
+  &__statute &__link {
     text-decoration: underline;
     color: $color-blue;
   }
-  &_button-send {
+  &__button-send {
     @include mixin-display(flex, flex-start, center, wrap);
     @include mixin-main($color-white, 700, 16px, 1.88, 0.06em);
     padding: 10px 76px;
@@ -169,8 +169,8 @@
     background: $color-blue;
     border: $color-blue;
   }
-  &_button-send:hover,
-  &_button-send:focus {
+  &__button-send:hover,
+  &__button-send:focus {
     background-color: $color-white;
     color: $color-blue;
   }

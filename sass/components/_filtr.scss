@@ -2,12 +2,12 @@
 @use '../utils/globals' as *;
 
 .buttons {
-  &_list {
+  &__list {
     @include mixin-display(flex, center, center, wrap);
     margin: 94px 0 50px;
     gap: 8px;
   }
-  &_text {
+  &__text {
     @include mixin-main($color-black, 500, 16px, 1.63, 0.03em);
     padding: 6px 22px;
     text-align: center;

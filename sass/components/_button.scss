@@ -4,24 +4,24 @@
 .bg {
   padding: 200px 0;
   background-color: $background-graphite;
-  &_background {
+  &__background {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
       url(../images/background/background.jpg);
     background-size: 1600px;
     background-repeat: no-repeat;
     background-position: center;
   }
-  &_content {
+  &__content {
     @include mixin-main($color-white, 900, 44px, 1.36, 0.06em);
     padding-bottom: 30px;
     text-align: center;
     text-transform: uppercase;
   }
-  &_button {
+  &__button {
     display: flex;
     justify-content: center;
   }
-  &_text {
+  &__text {
     @include mixin-main($color-white, 700, 16px, 1.875, 0.06em);
     padding: 10px 42px;
     text-decoration: none;
@@ -34,7 +34,7 @@
     background: $background-blue;
     border: $color-blue;
   }
-  &_text:hover {
+  &__text:hover {
     background-color: $color-white;
     color: $color-blue;
   }

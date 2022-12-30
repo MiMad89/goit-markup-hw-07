@@ -16,18 +16,18 @@
 .footer {
   display: flex;
 
-  &_logo {
+  &__logo {
     @include mixin-main($color-blue, 700, 26px, 1.19, 0.03em);
     font-family: 'Raleway', sans-serif;
     text-decoration: none;
   }
-  &_list {
+  &__list {
     margin: 20px 0;
   }
-  &_item:nth-last-child(-n + 2) {
+  &__item:nth-last-child(-n + 2) {
     margin-top: 9px;
   }
-  &_link {
+  &__link {
     text-decoration: none;
     color: $color-grey;
     transition-property: color;
@@ -45,15 +45,15 @@
   // .contact-second {
   //   text-decoration-line: underline;
   // }
-  &_social {
+  &__social {
     margin-top: 10px;
     margin-left: 70px;
   }
-  &_social-item {
+  &__social-item {
     display: flex;
     gap: 10px;
   }
-  &_social-icon {
+  &__social-icon {
     background-color: rgba(255, 255, 255, 0.1);
     fill: $color-white;
     border-radius: 50%;
@@ -70,11 +70,11 @@
   margin-top: 10px;
   margin-left: auto;
 
-  &_item {
+  &__item {
     display: flex;
     align-items: center;
   }
-  &_mail {
+  &__mail {
     width: 350px;
     margin-right: 12px;
     padding: 15px;
@@ -86,18 +86,18 @@
     background-color: $background-graphite;
     outline: none;
   }
-  &_mail:hover,
-  &_mail:focus,
-  &_mail:not(:placeholder-shown):required:valid {
+  &__mail:hover,
+  &__mail:focus,
+  &__mail:not(:placeholder-shown):required:valid {
     border-color: $background-blue;
     transition-property: border-color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  &_mail:not(:placeholder-shown):required:invalid {
+  &__mail:not(:placeholder-shown):required:invalid {
     border-color: $color-red;
   }
-  &_submit {
+  &__submit {
     @include mixin-main($color-white, 700, 16px, 1.87, 0.03em);
     display: inline-flex;
     align-items: center;
@@ -112,17 +112,17 @@
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     cursor: pointer;
   }
-  &_submit:hover,
-  &_submit:focus {
+  &__submit:hover,
+  &__submit:focus {
     background-color: $color-white;
     color: $color-blue;
   }
-  &_submit-send {
+  &__submit-send {
     margin-left: 24px;
     fill: currentColor;
   }
-  &_submit-send:hover,
-  &_submit-send:focus {
+  &__submit-send:hover,
+  &__submit-send:focus {
     fill: $color-blue;
   }
 }

@@ -52,30 +52,33 @@
             </ul>
           </div>
         </div>
-        <div class="nav__contact-header">
-          <div class="nav__contact-mail">
-            <a class="nav__mail" href="mailto:info@devstudio.com">
-              <svg class="nav__contact-mail-icon" width="16" height="12">
+        <!-- NAVIGATION END -->
+
+        <!-- CONTACT -->
+        <div class="contact">
+          <div class="contact__mail">
+            <a class="contact__link" href="mailto:info@devstudio.com">
+              <svg class="contact__mail-icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-envelope"></use>
               </svg>
               <span>info@devstudio.com</span>
             </a>
           </div>
-          <div class="nav__contact-tel">
-            <a class="nav__tel" href="tel:48111111111">
-              <svg class="nav__contact-tel-icon" width="10" height="16">
+          <div class="contact__tel">
+            <a class="contact__link" href="tel:48111111111">
+              <svg class="contact__tel-icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-smartphone"></use>
               </svg>
               <span>+48 111 111 111</span>
             </a>
           </div>
         </div>
-        <!-- NAVIGATION END -->
+        <!-- CONTACT END -->
       </nav>
     </header>
     <main>
       <!--BUTTON-->
-      <section class="bg bg__background">
+      <section class="bg">
         <div class="container bg__hero">
           <h1 class="bg__content">Efektywne rozwiązania dla naszego biznesu</h1>
           <div class="bg__button">
@@ -150,7 +153,8 @@
           <div>
             <ul class="job__list">
               <li class="job__item">
-                <img class="job__image"
+                <img
+                  class="job__image"
                   src="images/main/classes/classes1.jpg"
                   alt="pisanie kodu"
                   width="370"
@@ -161,7 +165,8 @@
                 </div>
               </li>
               <li class="job__item">
-                <img class="job__image"
+                <img
+                  class="job__image"
                   src="images/main/classes/classes2.jpg"
                   alt="telefon"
                   width="370"
@@ -172,7 +177,13 @@
                 </div>
               </li>
               <li class="job__item">
-                <img class="job__image" src="images/main/classes/classes3.jpg" alt="tablet" width="370" height="294" />
+                <img
+                  class="job__image"
+                  src="images/main/classes/classes3.jpg"
+                  alt="tablet"
+                  width="370"
+                  height="294"
+                />
                 <div class="job__description">
                   <h2 class="job__text">Aplikacje komputerowe</h2>
                 </div>
@@ -416,7 +427,13 @@
           <div class="newsletter__item">
             <form name="newsletter" autocomplete="on">
               <label>
-                <input class="newsletter__mail" type="email" name="mail" placeholder="E-mail" required />
+                <input
+                  class="newsletter__mail"
+                  type="email"
+                  name="mail"
+                  placeholder="E-mail"
+                  required
+                />
               </label>
               <button class="newsletter__submit" type="submit">
                 Zapisz się<svg class="newsletter__submit-send" width="24" height="24">
@@ -464,18 +481,24 @@
             </label>
             <label class="modal__label">
               Komentarz
-              <textarea class="modal__textarea" name="comment" rows="7" placeholder="Wprowadź tekst"></textarea>
+              <textarea
+                class="modal__textarea"
+                name="comment"
+                rows="7"
+                placeholder="Wprowadź tekst"
+              ></textarea>
             </label>
             <div class="modal__rule">
               <input class="modal__check" type="checkbox" name="statute" value="statute" />
               <label class="modal__statute" for="statute"
-                >Oświadczam iż akceptuję <span><a class="modal__link" href="#">Regulamin</a></span> i
+                >Oświadczam iż akceptuję
+                <span><a class="modal__link" href="#">Regulamin</a></span> i
                 <span><a class="modal__link" href="#">Politykę Prywatności.</a></span>
               </label>
             </div>
             <div class="bg__button">
-            <button class="modal__button-send" type="submit">Wyślij</button>
-          </div>
+              <button class="modal__button-send" type="submit">Wyślij</button>
+            </div>
           </form>
         </div>
       </div>

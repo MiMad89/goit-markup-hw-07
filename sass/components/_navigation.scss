@@ -16,6 +16,9 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    color: $color-blue;
+  }
   }
   &__active {
     position: relative;
@@ -31,39 +34,40 @@
     border-radius: 2px;
     background-color: $background-blue;
   }
-  &__contact-header {
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-  }
-  &__mail,
-  &__tel {
-    @include mixin-main($color-grey, 500, 14px, 1.14, 0.02em);
-    text-decoration: none;
-    transition-property: color, fill;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  }
-  &__mane:hover,
-  &__mail:hover,
-  &__tel:hover {
-    color: $color-blue;
-  }
-  &__contact-tel {
-    margin-left: 30px;
-  }
-  &__contact-mail-icon {
-    vertical-align: -1px;
-    fill: currentColor;
-  }
-  &__contact-mail-icon:hover {
-    fill: $background-blue;
-  }
-  &__contact-tel-icon {
-    vertical-align: -3px;
-    fill: currentColor;
-  }
-  &__contact-tel-icon:hover {
-    fill: $background-blue;
-  }
 }
+//   &__contact-header {
+//     cursor: pointer;
+//     display: flex;
+//     align-items: center;
+//   }
+//   &__mail,
+//   &__tel {
+//     @include mixin-main($color-grey, 500, 14px, 1.14, 0.02em);
+//     text-decoration: none;
+//     transition-property: color, fill;
+//     transition-duration: 250ms;
+//     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+//   }
+//   &__mane:hover,
+//   &__mail:hover,
+//   &__tel:hover {
+//     color: $color-blue;
+//   }
+//   &__contact-tel {
+//     margin-left: 30px;
+//   }
+//   &__contact-mail-icon {
+//     vertical-align: -1px;
+//     fill: currentColor;
+//   }
+//   &__contact-mail-icon:hover {
+//     fill: $background-blue;
+//   }
+//   &__contact-tel-icon {
+//     vertical-align: -3px;
+//     fill: currentColor;
+//   }
+//   &__contact-tel-icon:hover {
+//     fill: $background-blue;
+//   }
+// }

@@ -4,7 +4,9 @@
 .team {
   background-color: $background-beige;
   padding: 94px 0;
-
+  &__title{
+    @extend .job__title
+  }
   &__list {
     @include mixin-display(flex, space-between, center, wrap);
   }

@@ -4,12 +4,8 @@
 .warning {
   color: $color-white;
 }
-.contact-name {
-  @include mixin-main($color-white, 700, 14px, 1.14, 0.03em);
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
-.footer-bg {
+
+.foot {
   padding: 60px 0px;
   background-color: $background-graphite;
 }
@@ -49,6 +45,9 @@
     margin-top: 10px;
     margin-left: 70px;
   }
+  &__title{
+
+  }
   &__social-item {
     display: flex;
     gap: 10px;
@@ -69,7 +68,9 @@
 .newsletter {
   margin-top: 10px;
   margin-left: auto;
-
+  &__title{
+    @extend .footer__title
+  }
   &__item {
     display: flex;
     align-items: center;

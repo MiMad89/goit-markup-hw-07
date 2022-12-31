@@ -29,10 +29,16 @@ body {
   letter-spacing: $letter-spacing;
 }
 
-.section-mane {
+.job__title {
   @include mixin-main($color-black, 700, 36px, 1.166, 0.03em);
   padding-bottom: 50px;
   text-align: center;
+}
+
+.footer__title {
+  @include mixin-main($color-white, 700, 14px, 1.14, 0.03em);
+  margin-bottom: 20px;
+  text-transform: uppercase;
 }
 
 @mixin mixin-display($display, $justify-content, $align-items, $flex-wrap){
@@ -41,6 +47,7 @@ body {
   align-items: $align-items;
   flex-wrap: $flex-wrap;
 }
+
 
 // .team-mane {
 //   font-weight: 500;

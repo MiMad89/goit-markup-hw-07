@@ -6,6 +6,9 @@
    @include mixin-display(flex, space-between, center, wrap);
     padding-bottom: 94px;
   }
+  &__title {
+  @extend .job__title
+}
   &__item {
     position: relative;
   }

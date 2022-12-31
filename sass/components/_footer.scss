@@ -5,13 +5,13 @@
   color: $color-white;
 }
 
-.foot {
+.footer {
   padding: 60px 0px;
   background-color: $background-graphite;
-}
-.footer {
-  display: flex;
 
+  &__bg {
+    display: flex;
+  }
   &__logo {
     @include mixin-main($color-blue, 700, 26px, 1.19, 0.03em);
     font-family: 'Raleway', sans-serif;
@@ -29,7 +29,7 @@
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-
+    padding: 0;
     &:hover {
       color: $color-blue;
     }
@@ -45,8 +45,7 @@
     margin-top: 10px;
     margin-left: 70px;
   }
-  &__title{
-
+  &__title {
   }
   &__social-item {
     display: flex;
@@ -68,8 +67,8 @@
 .newsletter {
   margin-top: 10px;
   margin-left: auto;
-  &__title{
-    @extend .footer__title
+  &__title {
+    @extend .footer__title;
   }
   &__item {
     display: flex;

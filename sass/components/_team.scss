@@ -5,7 +5,9 @@
   background-color: $background-beige;
   padding: 94px 0;
   &__title{
-    @extend .job__title
+    @include mixin-main($color-black, 700, 36px, 1.166, 0.03em);
+  padding-bottom: 50px;
+  text-align: center;
   }
   &__list {
     @include mixin-display(flex, space-between, center, wrap);

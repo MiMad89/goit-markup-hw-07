@@ -29,17 +29,6 @@ body {
   letter-spacing: $letter-spacing;
 }
 
-.job__title {
-  @include mixin-main($color-black, 700, 36px, 1.166, 0.03em);
-  padding-bottom: 50px;
-  text-align: center;
-}
-
-.footer__title {
-  @include mixin-main($color-white, 700, 14px, 1.14, 0.03em);
-  margin-bottom: 20px;
-  text-transform: uppercase;
-}
 
 @mixin mixin-display($display, $justify-content, $align-items, $flex-wrap){
   display: $display;
@@ -48,12 +37,3 @@ body {
   flex-wrap: $flex-wrap;
 }
 
-
-// .team-mane {
-//   font-weight: 500;
-//   font-size: 16px;
-//   line-height: 1.187;
-//   text-align: center;
-//   letter-spacing: 0.03em;
-//   color: var(--brand-color-black);
-// }
